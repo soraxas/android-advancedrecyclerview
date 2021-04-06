@@ -206,6 +206,15 @@ public class RecyclerViewTouchActionGuardManager {
     }
 
     /**
+     * Checks whether the touch guard is current guarding.
+     *
+     * @return True if currently touch guard is guarding, otherwise false
+     */
+    public boolean isGuarding() {
+        return mGuarding;
+    }
+
+    /**
      * Sets whether to use interception of "vertical scroll while animation running".
      *
      * @param enabled enabled / disabled
